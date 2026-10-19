@@ -9,3 +9,11 @@ As a part of the exhibition, Smith re-created the peddler doll, life-size and in
 ## notionnanny.net
 
 The website archived here was produced by e-2 in collaboration with the artist, who used online platforms (blogger.com and flickr.com) to engage with members of the public during the course of the project.
+
+The site was archived with HTTrack on 17 March 2010. Its last blog post is from June 2009.
+
+## Layout
+
+The original scrape is at the top of this repository: `notionnanny.net/` (the site and its Blogger-hosted news and press pages), `farm1.static.flickr.com/` and `farm2.static.flickr.com/` (the Flickr thumbnails), and `www.blogger.com/` (Blogger's stylesheets). In the scrape, the Blogger admin links (edit, delete and email) and a spam comment have been removed, and commenters' names have been taken out.
+
+The current version of the site is in `docs/`, which is what GitHub Pages publishes. It is a Jekyll site with one file per blog post in `docs/_posts/`, and one per press item in `docs/_press/`.
