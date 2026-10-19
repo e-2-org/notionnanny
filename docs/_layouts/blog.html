@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>{% if page.collection == "posts" %}Notion Nanny: {% endif %}{{ page.title | escape }}</title>
+{% include icons.html %}
 <link rel="stylesheet" href="{{ '/css/notionnanny.css' | relative_url }}">
 </head>
 <body class="{{ page.body_class }}">
