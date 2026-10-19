@@ -1,0 +1,32 @@
+---
+layout: blog
+---
+{%- comment -%}
+  A list of posts, newest first: all of them, or one month's if page.month (YYYY/MM) is set.
+{%- endcomment -%}
+{%- if page.month -%}
+  {%- assign posts = site.posts | where_exp: "p", "p.url contains page.month" -%}
+{%- else -%}
+  {%- assign posts = site.posts -%}
+{%- endif -%}
+<div id="main"><div id="main2">
+{%- assign last_day = "" %}
+{%- for post in posts %}
+  {%- assign day = post.date | date: "%A, %B %d, %Y" %}
+  {%- if day != last_day %}
+  <h2 class="date-header">{{ day }}</h2>
+  {%- assign last_day = day %}
+  {%- endif %}
+  {% include post.html post=post %}
+{%- endfor %}
+</div></div>
+
+<div id="sidebar"><div id="sidebar2">
+  <h2 class="sidebar-title">All Posts</h2>
+  <ul id="recently">
+    {%- for post in posts %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+    {%- endfor %}
+  </ul>
+  {% include archives.html %}
+</div></div>

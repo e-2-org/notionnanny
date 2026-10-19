@@ -1,0 +1,7 @@
+<h2 class="sidebar-title">Archives</h2>
+<ul class="archive-list">
+  {%- assign months = site.posts | reverse | group_by_exp: "p", "p.date | date: '%Y/%m'" %}
+  {%- for month in months %}
+  <li><a href="{{ '/news/' | append: month.name | append: '/' | relative_url }}">{{ month.items[0].date | date: "%B %Y" }}</a></li>
+  {%- endfor %}
+</ul>

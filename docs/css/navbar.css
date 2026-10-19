@@ -1,0 +1,160 @@
+/**
+ * navbar.css
+ * stylesheet for navigation on notionnanny.net
+ * @author Peter Edwards <tech@e-2.org>
+ * @version 1.0
+ * @package notionnanny
+ */
+
+/* top of main page */
+#nn-head {
+  border:0;
+  position:relative;
+  background-color:#fff;
+  width:700px;
+  margin:0 53px;
+}
+#nn-head-img {
+  border:0;
+  background-color:#fff;
+  width:483px;
+  height:297px;
+  float:left;
+}
+#nn-head-clear {
+  clear:both;
+  height:21px;
+}
+#navbar {
+  width:210px;
+  height:280px;
+  float:left;
+}
+#navbar ul {
+  position:relative;
+  padding:0;
+  margin:0 0 0 10px;
+  list-style:none;
+}
+#navbar li {
+  margin:0;
+  padding:0;
+}
+/**
+ * CSS image replacement by Seamus Leahy
+ * http://www.moronicbajebus.com/playground/cssplay/image-replacement/
+ */
+ 
+/* global settings */
+#navbar li a {
+  display:block;
+  background-color:transparent;
+  /* height of all images */ 
+  padding-top:38px; 
+  /*The image*/ 
+  background-repeat:no-repeat;
+  background-position:0px 0px; 
+  /*Hide the text*/ 
+  overflow:hidden; 
+  /* WIN IE5 hack */ 
+  height: 0px !important; /* for most browsers */
+  height /**/:30px; /* for IE5.5's bad box model */
+}
+#navbar li a.news {
+  background-image:url(../images/buttons/news.gif);
+}
+#navbar li a.timeline {
+  background-image:url(../images/buttons/timeline.gif);
+}
+#navbar li a.about-nn {
+  background-image:url(../images/buttons/about-nn.gif);
+}
+#navbar li a.about-as {
+  background-image:url(../images/buttons/about-as.gif);
+}
+#navbar li a.contact {
+  background-image:url(../images/buttons/venue.gif);
+}
+#navbar li a.support {
+  background-image:url(../images/buttons/previoussupport.gif);
+}
+#navbar li a.press {
+  background-image:url(../images/buttons/press.gif);
+}
+#navbar li a:hover {
+  background-position:0px -39px;
+}
+/**
+ * titles and back to the top link
+ */
+div.topbar {
+  /*width:800px;*/
+	display:block;
+	float:left;
+  height:30px;
+  padding:0 70px;
+	margin:10px 0;
+}
+div.topbar ul {
+  float:right;
+  padding:0;
+	margin:0;
+  list-style:none;
+}
+div.topbar li {
+  margin:0;
+  padding:0;
+}
+div.topbar li a {
+  display:block;
+  /* height of image */ 
+  padding:30px 0 0 0;
+  width:100px;
+  /*The image*/ 
+  background:transparent url(../images/buttons/backtotop.gif) no-repeat 0px 0px; 
+  /*Hide the text*/ 
+  overflow:hidden; 
+  /* WIN IE5 hack */ 
+  height: 0px !important; /* for most browsers */
+  height /**/:30px; /* for IE5.5's bad box model */
+}
+div.topbar li a:hover {
+  background-position:0px -40px;
+}
+div.topbar h1 {
+  display:block;
+	float:left;
+	margin:0;
+  /* height of image */ 
+  padding:30px 0 0 0;
+  width:500px;
+  /*Hide the text*/ 
+  overflow:hidden;
+  /* WIN IE5 hack */ 
+  height:0px !important; /* for most browsers */
+  height /**/:30px; /* for IE5.5's bad box model */
+  /* IE5/Mac: \*//*/
+	text-indent: -100em;
+  /*  */
+}
+#news-title {
+  background:#fff url(../images/titles/news.gif) no-repeat left top;
+}
+#timeline-title {
+  background:#fff url(../images/titles/timeline.gif) no-repeat left top;
+}
+#about-nn-title {
+  background:#fff url(../images/titles/about-nn.gif) no-repeat left top;
+}
+#about-as-title {
+  background:#fff url(../images/titles/about-as.gif) no-repeat left top;
+}
+#contact-title {
+  background:#fff url(../images/titles/venue.gif) no-repeat left top;
+}
+#support-title {
+  background:#fff url(../images/titles/previoussupport.gif) no-repeat left top;
+}
+#press-title {
+  background:#fff url(../images/titles/press.gif) no-repeat left top;
+}

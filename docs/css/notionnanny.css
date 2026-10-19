@@ -1,0 +1,408 @@
+body {
+	background:#fff;
+  margin:0;
+  padding:0;
+  font:x-small/1.75em Georgia,Serif;
+  text-align:center;
+  color:#333;
+  font-size/* */:/**/small;
+  font-size: /**/small;
+}
+div {
+  margin:0;
+  padding:0;
+}
+a, a:link {
+  color:#479;
+  text-decoration:none;
+}
+a:visited {
+  color:#858;
+  text-decoration:none;
+}
+a:hover, a:visited:hover {
+  color:#c60;
+  text-decoration:underline;
+}
+a img {
+  border-width:0;
+}
+sup {
+  font-size:smaller;
+}
+/* Container */
+#nn-container {
+  width:800px;
+  margin:20px auto;
+  text-align:left;
+  background:#fff url(../images/borders/middle-border.gif) repeat-y;
+}
+/* header */
+#nn-header {
+  width:800px;
+  height:67px;
+  background:#fff url(../images/borders/top-border.gif) no-repeat left top;
+}
+/* content */
+#nn-content {
+  position:relative;
+}
+/* headings */
+#nn-content h1 {
+  font:bold 1.2em Georgia,Serif;
+}
+#nn-content h1.centered {
+  text-align:center;
+}
+#nn-content .italic {
+  font-style:italic;
+}
+#nn-content h2 {
+  color:#666;
+  font:bold 1.1em Georgia,Serif;
+}
+/* footer */
+#nn-footer {
+  clear:both;
+  width:800px;
+  height:41px;
+  background:#fff url(../images/borders/bottom-border.gif) no-repeat top left;
+}
+/* columns */
+#nn-content .left, #nn-content .right {
+  text-align:left;
+} 
+#nn-content .left {
+  float:left;
+}
+#nn-content .right {
+  float:right;
+}
+#nn-content .content {
+  clear:both;
+  padding:0 70px;
+}
+#contact-img {
+  border:0;
+  margin:10px 90px;
+}
+#nn-content p.separator, #content p.separator {
+  height:10px;
+  clear:both;
+  background:transparent url(../images/borders/small-separator.gif) no-repeat top center;
+}  
+#nn-content div.separator {
+  clear:both;
+  margin:0 34px;
+  height:46px;
+  background:#fff url(../images/borders/separator.gif) no-repeat top left;
+}
+#content div.pressitem {
+  position:relative;
+  clear:both;
+	text-align:left;
+}
+#content div.press-photo {
+  float:right;
+	width:240px;
+	margin:10px 0 10px 10px;
+}
+#content div.press-photo p {
+  font-size: 0.9em;
+	margin:0;
+  padding:2px;
+}
+#newsframe, #pressframe {
+  clear:both;
+  padding:0 43px;
+}
+#logos {
+  position:relative;
+	clear:both;
+  padding:0 60px;
+}
+#logos img.logo {
+  border:0;
+  margin:10px;
+  float:left;
+}
+span.dropcap {
+  display:block;
+  float:left;
+  width:40px;
+  height:39px;
+  margin-right:5px;
+  /* height of image */ 
+  padding-top:39px; 
+  /*The image*/ 
+  background-image:url(../images/n-dropcap.gif);
+  background-repeat:no-repeat;
+  background-position:0px 7px; 
+  /*Hide the text*/ 
+  overflow:hidden; 
+  height: 0px !important; /* for most browsers */
+  height /**/:39px; /* for IE5.5's bad box model */
+  /* IE5/Mac: \*//*/
+	text-indent: -100em;
+  /*  */
+}
+/* rest is from the blogger stylesheet */
+/* Header
+----------------------------------------------- */
+#header {
+  width:660px;
+  margin:0 auto 10px;
+  border:1px solid #ccc;
+  }
+#blog-title {
+  margin:5px 5px 0;
+  padding:20px 20px .25em;
+  border:1px solid #eee;
+  border-width:1px 1px 0;
+  font-size:200%;
+  line-height:1.2em;
+  font-weight:normal;
+  color:#666;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  }
+#blog-title a {
+  color:#666;
+  text-decoration:none;
+  }
+#blog-title a:hover {
+  color:#c60;
+  }
+#description {
+  margin:0 5px 5px;
+  padding:0 20px 20px;
+  border:1px solid #eee;
+  border-width:0 1px 1px;
+  max-width:700px;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Content
+----------------------------------------------- */
+#content {
+  width:660px;
+  margin:0 0 0 10px;
+  padding:0;
+  text-align:left;
+  }
+#main {
+  width:480px;
+  float:left;
+  }
+#sidebar {
+  width:170px;
+  float:right;
+  }
+
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  margin:1.5em 0 .75em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+.date-header {
+  margin:1.5em 0 .5em;
+  }
+.post {
+  margin:.5em 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.post-title {
+  margin:.25em 0 0;
+  padding:0 0 4px;
+  font-size:140%;
+  font-weight:normal;
+  line-height:1.4em;
+  color:#c60;
+  }
+.post-title a, .post-title a:visited, .post-title strong {
+  display:block;
+  text-decoration:none;
+  color:#c60;
+  font-weight:normal;
+  }
+.post-title strong, .post-title a:hover {
+  color:#333;
+  }
+.post div {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+p.post-footer {
+  margin:-.25em 0 0;
+  color:#ccc;
+  }
+.post-footer em, .comment-link {
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.post-footer em {
+  font-style:normal;
+  color:#999;
+  margin-right:.6em;
+  }
+.comment-link {
+  margin-left:.6em;
+  }
+.post img {
+  padding:4px;
+  border:1px solid #ddd;
+  }
+.post blockquote {
+  margin:1em 20px;
+  }
+.post blockquote p {
+  margin:.75em 0;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+  margin:1em 0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+#comments h4 strong {
+  font-size:130%;
+  }
+#comments-block {
+  margin:1em 0 1.5em;
+  line-height:1.6em;
+  }
+#comments-block dt {
+  margin:.5em 0;
+  }
+#comments-block dd {
+  margin:.25em 0 0;
+  }
+#comments-block dd.comment-timestamp {
+  margin:-.25em 0 2em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#comments-block dd p {
+  margin:0 0 .75em;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* Sidebar Content
+----------------------------------------------- */
+#sidebar ul {
+  margin:0 0 1.5em;
+  padding:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  list-style:none;
+  }
+#sidebar ul.homelink {
+  margin-top:1.5em;
+  }
+#sidebar li {
+  margin:0;
+  padding:0 0 .25em 15px;
+  text-indent:-15px;
+  line-height:1.5em;
+  font-size:83%;
+  }
+#sidebar p {
+  color:#666;
+  line-height:1.5em;
+  }
+
+
+/* Profile
+----------------------------------------------- */
+#profile-container {
+  margin:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.profile-datablock {
+  margin:.5em 0 .5em;
+  }
+.profile-img {
+  display:inline;
+  }
+.profile-img img {
+  float:left;
+  padding:4px;
+  border:1px solid #ddd;
+  margin:0 8px 3px 0;
+  }
+.profile-data {
+  margin:0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.profile-data strong {
+  display:none;
+  }
+.profile-textblock {
+  margin:0 0 .5em;
+  }
+.profile-link {
+  margin:0;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+	width:660px;
+  clear:both;
+  margin:0 0 0 10px;
+  }
+#footer hr {
+  display:none;
+  }
+#footer p {
+  margin:0;
+  padding-top:15px;
+  font:78%/1.6em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Blogger pages (news and press, shown in the home page's iframes)
+----------------------------------------------- */
+/* on the news index and archives, a post's span.fullpost is hidden and
+   "Read more..." links to the post's own page */
+span.fullpost {display:none;}
+div > span.readmore {display:none;}
+span.fullpost + div + span.readmore {display:inline;}
+body.post-page span.fullpost {display:inline;}
+body.post-page span.readmore {display:none;}
+/* on the press page, "Read more..." shows the rest of the article in place */
+body.press-page span.fullpost.open {display:inline;}
+body.press-page span.fullpost.open + div + span.readmore {display:none;}
