@@ -66,7 +66,7 @@ The Windows (CRLF) line endings and the Latin-1 encoding of `notionnanny.net/ind
 
 ## Icons (added later in the session)
 
-The user added `docs/icons/notionnanny.png`, a 44px crop of the face from `images/header.gif`. Enlarging it to 512px looked blurry, so every icon is now made from a 134×134 crop of the header's picture panel (`docs/icons/notionnanny-large.png`). The crop shows the head, cloak and basket, and stops just inside the red frame. The files match the other e-2-org sites: `favicon.ico` (48/32/16), 96px, apple-touch (180px), 192 and 512px manifest icons, an SVG holding the PNG, and `site.webmanifest`. The tags are in `docs/_includes/icons.html`, used by `index.html` and `_layouts/blog.html`. `docs/favicon.ico` is a copy of the `.ico`.
+The user added `docs/icons/notionnanny.png` (since removed), a 44px crop of the face from `images/header.gif`. Enlarging it to 512px looked blurry, so every icon is now made from a 134×134 crop of the header's picture panel (`docs/icons/notionnanny-large.png`). The crop shows the head, cloak and basket, and stops just inside the red frame. The files match the other e-2-org sites: `favicon.ico` (48/32/16), 96px, apple-touch (180px), 192 and 512px manifest icons, an SVG holding the PNG, and `site.webmanifest`. The tags are in `docs/_includes/icons.html`, used by `index.html` and `_layouts/blog.html`. `docs/favicon.ico` is a copy of the `.ico`.
 
 ## Data sources
 
