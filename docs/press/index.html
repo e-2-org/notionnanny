@@ -1,0 +1,22 @@
+---
+layout: blog
+title: Press
+body_class: press-page
+---
+{%- assign items = site.press | sort: "order" %}
+{%- for item in items %}
+<div class="pressitem">
+  <div style="clear:both;"></div>{{ item.content }}<div style="clear:both; padding-bottom:0.25em"></div>
+  <span class="readmore"><a href="#">Read more...</a></span>
+</div>
+<p class="separator"></p>
+{%- endfor %}
+<script>
+// The original "Read more..." pages weren't archived, so show the rest of the article in place.
+document.querySelectorAll('.readmore a').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    e.preventDefault();
+    a.closest('.pressitem').querySelector('.fullpost').classList.add('open');
+  });
+});
+</script>

@@ -1,0 +1,45 @@
+# Notion Nanny (Allison Smith, 2005-2007) - Jekyll site for GitHub Pages
+#
+# Pages:
+#   index.html                 home page; shows news/ and press/ in iframes, as the original did
+#   news/index.html            the blog: every post, newest first
+#   news/YYYY/MM/index.html    a month of the blog (one small file per month)
+#   press/index.html           press cuttings
+#
+# Content, one file per item:
+#   _posts/                    blog posts, published at news/YYYY/MM/<slug>.html; comments are in front matter
+#   _press/                    press items, sorted by "order"
+#   images/flickr/             the Flickr thumbnails the posts and press items show; each one links
+#                              to its page on flickr.com/photos/notionnanny
+#
+# Posts were written on Blogger and keep their original HTML. A post's <span class="fullpost">
+# only shows on its own page; elsewhere it is replaced by a "Read more..." link.
+
+title: Notion Nanny
+description: >-
+  Notion Nanny was a collaborative touring project in which artist Allison
+  Smith took on the role of an itinerant apprentice traveling through rural and
+  urban districts in search of traditional skills and revolutionary dialogue.
+url: https://e-2-org.github.io
+baseurl: "/notionnanny"
+timezone: Etc/UTC
+
+permalink: /news/:year/:month/:title.html
+
+collections:
+  press:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .vendor
+  - .bundle

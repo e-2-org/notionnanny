@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{% if page.collection == "posts" %}Notion Nanny: {% endif %}{{ page.title | escape }}</title>
+<link rel="stylesheet" href="{{ '/css/notionnanny.css' | relative_url }}">
+</head>
+<body class="{{ page.body_class }}">
+<div id="content">
+{{ content }}
+</div>
+<div id="footer"><hr><p>&nbsp;</p></div>
+<script>
+// These pages are shown in the home page's iframes; open other sites
+// (Flickr won't be framed) in a new tab instead.
+document.querySelectorAll('a[href^="http"]').forEach(function (a) {
+  a.target = '_blank';
+  a.rel = 'noopener';
+});
+</script>
+</body>
+</html>

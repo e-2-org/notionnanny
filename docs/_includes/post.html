@@ -1,0 +1,21 @@
+{%- comment -%}
+  One blog post. include.post is the post; include.item is true on the post's own page.
+{%- endcomment -%}
+{%- assign post = include.post -%}
+<div class="post"><a name="{{ post.blogger_id }}"></a>
+  <h3 class="post-title">{{ post.title | escape }}</h3>
+  <div class="post-body">
+  <div>
+    <div style="clear:both;"></div>{{ post.content }}<div style="clear:both; padding-bottom:0.25em"></div>
+    {%- unless include.item %}
+    <span class="readmore"><a href="{{ post.url | relative_url }}">Read more...</a></span>
+    {%- endunless %}
+  </div>
+  </div>
+  <p class="post-footer">
+    <em>posted by Notion Nanny at <a href="{{ post.url | relative_url }}" title="permanent link">{{ post.date | date: "%-I:%M %p" }}</a></em>
+    {%- unless include.item %}
+    <a class="comment-link" href="{{ post.url | relative_url }}#comments">{{ post.comments | size }} comments</a>
+    {%- endunless %}
+  </p>
+</div>

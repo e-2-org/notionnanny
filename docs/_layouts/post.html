@@ -1,0 +1,41 @@
+---
+layout: blog
+body_class: post-page
+---
+<div id="main"><div id="main2">
+  <h2 class="date-header">{{ page.date | date: "%A, %B %d, %Y" }}</h2>
+  {% include post.html post=page item=true %}
+
+  <div id="comments">
+    <a name="comments"></a>
+    <h4>{{ page.comments | size }} Comments:</h4>
+    <dl id="comments-block">
+    {%- for c in page.comments %}
+      <dt class="comment-poster" id="c{{ c.id }}">
+        {% if c.url %}<a href="{{ c.url }}">{{ c.author }}</a>{% else %}{{ c.author }}{% endif %} said...
+      </dt>
+      <dd class="comment-body">
+        {{ c.body }}
+      </dd>
+      <dd class="comment-timestamp"><a href="#c{{ c.id }}" title="comment permalink">{{ c.time }}</a></dd>
+    {%- endfor %}
+    </dl>
+    <p class="comment-timestamp"><a href="{{ '/news/' | relative_url }}">&lt;&lt; Home</a></p>
+  </div>
+</div></div>
+
+<div id="sidebar"><div id="sidebar2">
+  <ul class="homelink"><li><a href="{{ '/news/' | relative_url }}">&laquo; Home</a></li></ul>
+  <h2 class="sidebar-title">Previous Posts</h2>
+  <ul id="recently">
+    {%- assign found = false %}
+    {%- assign shown = 0 %}
+    {%- for post in site.posts %}
+      {%- if found and shown < 10 %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+        {%- assign shown = shown | plus: 1 %}
+      {%- endif %}
+      {%- if post.url == page.url %}{% assign found = true %}{% endif %}
+    {%- endfor %}
+  </ul>
+</div></div>
